@@ -4,10 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <title>TAN Noodles Truck</title>
-<link rel="stylesheet" href="images/style.css">
+  <link rel="stylesheet" href="images/style.css">
 </head>
 
 <body>
+
+  <!-- 图片放大层 -->
+  <div id="img-modal" onclick="closeImage()">
+    <img id="img-modal-content">
+  </div>
 
   <header class="top-header">
     <img src="images/logo.png" alt="Logo" class="logo">
@@ -17,12 +22,12 @@
     <div class="item">📍 Milano park west</div>
     <div class="item">⏰ Lun–Ven 11:30–14:00</div>
     <div class="item">🍜 Ravioli disponibili su prenotazione</div>
-    <div class="item">📞 Prenotazioni: WhatsApp 3668737904</div>
+    <div class="item">📞 WhatsApp 3668737904</div>
   </div>
 
   <div class="item">
     <h2>🍽 Pacchetto menu</h2>
-<img src="images/pacchetto-menu.png" class="menu-img" alt="Pacchetto menu">
+    <img src="images/pacchetto-menu.png" class="menu-img clickable" alt="Pacchetto menu" onclick="openImage(this)">
   </div>
 
   <div class="item">
@@ -36,6 +41,20 @@
       loading="lazy">
     </iframe>
   </div>
+
+  <!-- JS 放在 body 结束前 -->
+  <script>
+    function openImage(img) {
+      const modal = document.getElementById('img-modal');
+      const modalImg = document.getElementById('img-modal-content');
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+    }
+
+    function closeImage() {
+      document.getElementById('img-modal').style.display = 'none';
+    }
+  </script>
 
 </body>
 </html>
