@@ -35,3 +35,26 @@ body {
   max-width: 400px;
   border-radius: 10px;
 }
+/* 点击放大图片 */
+.clickable {
+  cursor: zoom-in;
+}
+
+/* 遮罩层 */
+#img-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+/* 放大的图片 */
+#img-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
