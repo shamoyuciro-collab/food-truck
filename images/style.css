@@ -63,3 +63,17 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   object-fit: contain;
 }
+.whatsapp-btn {
+  display: inline-block;
+  background: #25D366;          /* WhatsApp 绿色 */
+  color: white;                  /* 文字白色 */
+  padding: 10px 16px;            /* 内边距 */
+  border-radius: 8px;            /* 圆角按钮 */
+  text-decoration: none;         /* 去掉下划线 */
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.whatsapp-btn:hover {
+  background: #128C7E;           /* 悬停颜色深一点 */
+}
