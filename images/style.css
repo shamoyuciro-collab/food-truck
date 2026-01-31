@@ -35,26 +35,30 @@ body {
   max-width: 400px;
   border-radius: 10px;
 }
-/* 点击放大图片 */
+/* 鼠标手势提示 */
 .clickable {
   cursor: zoom-in;
 }
 
-/* 遮罩层 */
+/* 放大层全屏 + 居中 */
 #img-modal {
-  display: none;
-  position: fixed;
+  display: none;              /* 默认隐藏 */
+  position: fixed;            /* 固定屏幕，不随滚动 */
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.85);  /* 黑色半透明遮罩 */
+  display: flex;              /* Flex 居中 */
+  justify-content: center;    /* 水平居中 */
+  align-items: center;        /* 垂直居中 */
   z-index: 9999;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  justify-content: center;
-  align-items: center;
+  padding: 10px;              /* 手机小屏幕留一点空白 */
 }
 
 /* 放大的图片 */
 #img-modal img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 100%;   /* 屏幕宽度内自适应 */
+  max-height: 100%;  /* 屏幕高度内自适应 */
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  cursor: zoom-out;  /* 放大后提示点击关闭 */
+  object-fit: contain; /* 保持比例 */
 }
