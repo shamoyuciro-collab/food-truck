@@ -1,13 +1,9 @@
 .top-header {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center;   /* 水平居中 */
-  gap: 12px;
   padding: 12px 16px;
-  background: #ffffff;
-  border-bottom: 1px solid #eee;
 }
-
 .brand-text {
   text-align: left;
 }
