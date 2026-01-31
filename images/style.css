@@ -42,17 +42,15 @@ body {
 
 /* 放大层全屏 + 居中 */
 #img-modal {
-  display: none;              /* 默认隐藏 */
-  position: fixed;            /* 固定屏幕，不随滚动 */
+  display: none;              /* 默认隐藏，一定要在最前面 */
+  position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.85);  /* 黑色半透明遮罩 */
-  display: flex;              /* Flex 居中 */
-  justify-content: center;    /* 水平居中 */
-  align-items: center;        /* 垂直居中 */
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
   z-index: 9999;
-  padding: 10px;              /* 手机小屏幕留一点空白 */
+  padding: 10px;
 }
-
 /* 放大的图片 */
 #img-modal img {
   max-width: 100%;   /* 屏幕宽度内自适应 */
