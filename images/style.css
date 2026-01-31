@@ -1,0 +1,38 @@
+.top-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-right: 12px;
+}
+
+.logo-text {
+  width: 48px;
+  height: 48px;
+  background: #c0392b;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.brand-text h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.brand-text p {
+  font-size: 12px;
+  color: #666;
+  margin: 2px 0 0;
+}
