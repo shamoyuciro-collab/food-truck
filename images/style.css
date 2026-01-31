@@ -11,10 +11,10 @@
 .brand-text {
   text-align: left;
 }
-.pacchetto menu.png {
+.menu-img {
   width: 100%;
-  max-width: 400px;   /* 防止太大 */
+  max-width: 400px;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
 }
