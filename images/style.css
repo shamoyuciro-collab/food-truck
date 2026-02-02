@@ -2,7 +2,7 @@ body {
   margin: 0;
   background: #f4f4f4;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 18px;   /* ← 全站文字变大 */
+  font-size: 20px;   /* ← 全站文字变大 */
 }
 
 /* 顶部 */
@@ -33,7 +33,7 @@ body {
 }
 
 .item h2 {
-  font-size: 22px;        /* ← 标题更大 */
+  font-size: 26px;        /* ← 标题更大 */
   margin: 0 0 12px;
   text-align: center;     /* ← 居中 */
   font-weight: 600;
@@ -41,9 +41,12 @@ body {
 
 /* iframe 地图 */
 .item iframe {
+  display: block;        
+  margin: 0 auto;         
   width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
+  max-width: 600px;      
+  height: 360px;          
+  border-radius: 12px;
 }
 
 /* 图片放大遮罩层 */
@@ -79,4 +82,28 @@ body {
 
 .whatsapp-btn:hover {
   background: #128C7E;           /* 悬停颜色深一点 */
+}
+@media (max-width: 480px) {
+
+  body {
+    font-size: 22px;   
+  }
+
+  .item h2 {
+    font-size: 26px;  
+  }
+
+  .item {
+    padding: 18px 18px;  
+  }
+
+  .whatsapp-btn {
+    font-size: 20px;     /* 👈 按钮字也放大 */
+    padding: 14px 18px;
+  }
+.item iframe {
+    max-width: 100%;     /* 👈 手机全宽 */
+    height: 420px;       /* 👈 手机更大 */
+  }
+
 }
